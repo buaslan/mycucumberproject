@@ -13,7 +13,6 @@ public class GoogleStepDefs {
     @Given("user is on the google page")
     public void user_is_on_the_google_page() {
         Driver.getDriver().get(ConfigReader.getProperty("google_url"));
-
     }
     @When("user search for iPhone on google")
     public void user_search_for_i_phone_on_google() {
@@ -21,7 +20,7 @@ public class GoogleStepDefs {
         googlePage.searchBox.sendKeys("iPhone"+ Keys.ENTER);
     }
     @Then("verify the page title contains iPhone")
-    public void verify_the_page_title_contains_iphone() {
+    public void verify_the_page_title_contains_i_phone() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("iPhone"));
     }
     @Then("close the application")
@@ -36,12 +35,23 @@ public class GoogleStepDefs {
     public void verify_the_page_title_contains_tea_pot() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("TeaPot"));
     }
-    @When("user search for linkedin on google")
-    public void user_search_for_linkedin_on_google() {
-        googlePage.searchBox.sendKeys("linkedin"+ Keys.ENTER);
+    @Given("user opens the URL {string}")
+    public void user_opens_the_url(String string) {
+        Driver.getDriver().get(string);
     }
-    @Then("verify the page title contains linkedin")
-    public void verify_the_page_title_contains_linkedin() {
+    @Given("user search for {string} on the google")
+    public void user_search_for_on_the_google(String string) {
+        googlePage.searchBox.sendKeys(string+Keys.ENTER);
+    }
+    @Then("verify the page title contains {string}")
+    public void verify_the_page_title_contains(String string) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
+
+    }
+    @Then("verify test case fails")
+    public void verify_test_case_fails() {
+//failing for failed test cases
+        Assert.assertTrue(false);
     }
 
 }
