@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="5.738">
+    <testcase classname="customer_login_feature" name="login_with_customer_credentials" time="4.526">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@role='button']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bcfce2042166e56d0abc53391394782" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................failed
+And user enters username as "customer@bluerentalcars.com" and password as "12345" and click on login button.skipped
+Then verify the login is successful.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bcfce2042166e56d0abc53391394782
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at pages.HomePage.clickOnLoginLink(HomePage.java:77)
+	at stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page(AppLoginStepDefs.java:21)
+	at ✽.user navigate the login page(file:///Users/burhanaslan/Desktop/IdeaProjects/mycucumberproject/./src/test/resources/features/day20_customer_login.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="customer_login_feature" name="login_with_customer_credentials_2" time="0.179">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@role='button']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bcfce2042166e56d0abc53391394782" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................failed
+And user enters username as "customer1@bluerentalcars.com" and password as "12346" and click on login button.skipped
+Then verify the login is successful.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bcfce2042166e56d0abc53391394782
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at pages.HomePage.clickOnLoginLink(HomePage.java:77)
+	at stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page(AppLoginStepDefs.java:21)
+	at ✽.user navigate the login page(file:///Users/burhanaslan/Desktop/IdeaProjects/mycucumberproject/./src/test/resources/features/day20_customer_login.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="customer_login_feature" name="login_with_customer_credentials_3" time="0.155">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@role='button']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bcfce2042166e56d0abc53391394782" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................failed
+And user enters username as "customer2@bluerentalcars.com" and password as "12347" and click on login button.skipped
+Then verify the login is successful.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bcfce2042166e56d0abc53391394782
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at pages.HomePage.clickOnLoginLink(HomePage.java:77)
+	at stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page(AppLoginStepDefs.java:21)
+	at ✽.user navigate the login page(file:///Users/burhanaslan/Desktop/IdeaProjects/mycucumberproject/./src/test/resources/features/day20_customer_login.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="customer_login_feature" name="login_with_customer_credentials_4" time="0.177">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@role='button']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bcfce2042166e56d0abc53391394782" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................failed
+And user enters username as "customer3@bluerentalcars.com" and password as "12348" and click on login button.skipped
+Then verify the login is successful.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bcfce2042166e56d0abc53391394782
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at pages.HomePage.clickOnLoginLink(HomePage.java:77)
+	at stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page(AppLoginStepDefs.java:21)
+	at ✽.user navigate the login page(file:///Users/burhanaslan/Desktop/IdeaProjects/mycucumberproject/./src/test/resources/features/day20_customer_login.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="customer_login_feature" name="login_with_customer_credentials_5" time="0.16">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@role='button']&quot;}&#10;  (Session info: chrome=109.0.5414.87)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4bcfce2042166e56d0abc53391394782" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................failed
+And user enters username as "customer4@bluerentalcars.com" and password as "12322" and click on login button.skipped
+Then verify the login is successful.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button']"}
+  (Session info: chrome=109.0.5414.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'burhans-iMac.hitronhub.home', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bcfce2042166e56d0abc53391394782, findElement {using=xpath, value=//a[@role='button']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.87, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/vf/nz5zvv751_n...}, goog:chromeOptions: {debuggerAddress: localhost:50415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50415/devtoo..., se:cdpVersion: 109.0.5414.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bcfce2042166e56d0abc53391394782
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at pages.HomePage.clickOnLoginLink(HomePage.java:77)
+	at stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page(AppLoginStepDefs.java:21)
+	at ✽.user navigate the login page(file:///Users/burhanaslan/Desktop/IdeaProjects/mycucumberproject/./src/test/resources/features/day20_customer_login.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
